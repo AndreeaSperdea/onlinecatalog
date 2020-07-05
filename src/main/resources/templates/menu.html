@@ -1,0 +1,20 @@
+<!--partea asta se introduce in toate paginile pentru a nu scrie acelasi cod de 1000 de ori-->
+<nav th:fragment="menu_nav" xmlns:th="http://www.thymeleaf.org">
+    <div class="nav-wrapper">
+         <a class="right" th:href="@{/logout}">Logout</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a th:href="@{/}">Home</a></li>
+            <li>
+                <a th:href="@{/allstudents}">
+				Students
+				</a>
+				
+				
+			          
+			</li>  
+			<li><a th:href="@{/allprofessors}">Professors</a></li>
+            
+			<li><a th:href="@{/allschoolgroups}">School Groups</a></li>
+        </ul>
+    </div>
+</nav>
